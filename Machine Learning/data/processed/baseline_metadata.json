@@ -1,0 +1,12 @@
+{
+  "declining_rate_top_50": 0.34,
+  "median_score": 0.4428606438441044,
+  "rows": 30000,
+  "score_formula": {
+    "depth_gap_score": 0.05,
+    "freshness_risk_score": 0.3,
+    "position_opportunity_score": 0.25,
+    "visibility_score": 0.4
+  },
+  "top_score": 0.9411888493764173
+}

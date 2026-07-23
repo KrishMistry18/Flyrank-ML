@@ -1,0 +1,18 @@
+{
+  "best_model": "random_forest",
+  "charts": [
+    "outputs\\charts\\action_mix.svg",
+    "outputs\\charts\\confidence_mix.svg",
+    "outputs\\charts\\top_reason_codes.svg",
+    "outputs\\charts\\top_feature_importance.svg",
+    "outputs\\charts\\trend_distribution.svg"
+  ],
+  "final_score_p50": 53.6492356008423,
+  "final_score_p80": 63.68027543994317,
+  "high_confidence_rows": 3576,
+  "queue_output": "outputs\\refresh_queue.csv",
+  "report_output": "outputs\\model_report.md",
+  "rows_scored": 30000,
+  "target_positive_rate": 0.5420666666666667,
+  "top_queue_score": 81.92846726727653
+}

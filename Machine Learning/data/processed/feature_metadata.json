@@ -1,0 +1,39 @@
+{
+  "declining_rate": 0.5420666666666667,
+  "declining_rows": 16262,
+  "initial_rows": 30000,
+  "input": "data\\raw\\content_refresh_anonymized.csv",
+  "model_categorical_features": [
+    "competition_level",
+    "content_type",
+    "main_intent",
+    "age_tier",
+    "freshness_tier",
+    "word_count_tier",
+    "impression_tier",
+    "position_tier"
+  ],
+  "model_numeric_features": [
+    "search_volume",
+    "competition",
+    "cpc",
+    "word_count",
+    "char_count",
+    "log_impressions_90d",
+    "log_clicks_90d",
+    "log_sessions_90d",
+    "log_ai_sessions_90d",
+    "days_with_impressions",
+    "days_with_sessions",
+    "content_age_days",
+    "days_since_last_update",
+    "ctr",
+    "avg_position",
+    "engagement_rate",
+    "scroll_rate",
+    "ai_traffic_pct"
+  ],
+  "output": "data\\processed\\refresh_feature_vector.csv",
+  "prepared_rows": 30000,
+  "target_definition": "trend_direction == 'down'"
+}
