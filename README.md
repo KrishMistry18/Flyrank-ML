@@ -93,6 +93,12 @@ This assignment implements and refines the Ask Krish AI implementation based on 
 - [Build Log](work/fl07_build_log.md)
 - Raw Run Evidence: [work/fl07_evidence/fl07_raw_agent_run.mp4](work/fl07_evidence/fl07_raw_agent_run.mp4)
 
+## FL-07 — Mobile & Accessibility Audit
+
+A comprehensive mobile-first audit was performed on the live portfolio to ensure responsiveness across devices (320px to 768px+). Key fixes include wrapping grid overflow in the hero section, fixing horizontal scroll issues on skill tags and footer links, and ensuring the Ask Krish AI interface fits cleanly within small mobile viewports without overflowing.
+
+- **Mobile Fix Log:** [work/fl07_mobile_fix_log.md](work/fl07_mobile_fix_log.md)
+
 ## FL-08 — Dynamic Portfolio Feature (Ask Krish AI)
 
 The "Ask Krish AI" agent is the dynamic, interactive feature of my portfolio, designed to answer recruiter and hiring manager questions. It grounds all responses using a local JSON knowledge base containing my verified experience and skills. It features server-side API handling via Vercel Edge functions, secure hidden API keys, and intelligent fallback for unknown information.
