@@ -118,6 +118,14 @@ Conducted a structured audit to break the deployed portfolio. Tested form valida
 - **Evidence Document:** [work/fl07_break_your_own_site.md](Machine Learning/work/fl07_break_your_own_site.md)
 - **Known Limitations:** True Lighthouse audits are environment-dependent, and Google Search indexing is a gradual external process.
 
+## FL-07 — Plant Your Flag: Domain + Badge
+Added free analytics (GoatCounter), a custom KM favicon, and the FlyRank Graduate badge to the portfolio footer. All SEO metadata (title, description, Open Graph, Twitter Card) verified present and correct. HTTPS is active via Vercel.
+- **Live Portfolio:** [https://portfolio-eta-pied-17.vercel.app/](https://portfolio-eta-pied-17.vercel.app/)
+- **Analytics:** GoatCounter (free, privacy-friendly, no cookies)
+- **Favicon:** SVG with KM initials matching portfolio identity
+- **Badge:** FlyRank Graduate badge in footer → [https://internship.flyrank.ai/verify](https://internship.flyrank.ai/verify)
+- **Evidence Document:** [work/fl07_plant_your_flag.md](Machine Learning/work/fl07_plant_your_flag.md)
+
 ## FL-08 — Dynamic Portfolio Feature (Ask Krish AI)
 
 The "Ask Krish AI" agent is the dynamic, interactive feature of my portfolio, designed to answer recruiter and hiring manager questions. It grounds all responses using a local JSON knowledge base containing my verified experience and skills. It features server-side API handling via Vercel Edge functions, secure hidden API keys, and intelligent fallback for unknown information.
