@@ -1,0 +1,42 @@
+[
+  {
+    "feature": "cpc",
+    "importance": 0.01513109381222268
+  },
+  {
+    "feature": "competition",
+    "importance": 0.01789560834454026
+  },
+  {
+    "feature": "search_volume",
+    "importance": 0.02790566336278905
+  },
+  {
+    "feature": "clicks_prev_30d",
+    "importance": 0.03798896037111881
+  },
+  {
+    "feature": "sessions_prev_30d",
+    "importance": 0.04812463227433342
+  },
+  {
+    "feature": "days_since_last_update",
+    "importance": 0.05367393288317792
+  },
+  {
+    "feature": "ctr",
+    "importance": 0.055908748970201386
+  },
+  {
+    "feature": "word_count",
+    "importance": 0.10573099699909413
+  },
+  {
+    "feature": "avg_position",
+    "importance": 0.16252016749086565
+  },
+  {
+    "feature": "impressions_prev_30d",
+    "importance": 0.44055459368040284
+  }
+]
