@@ -93,9 +93,15 @@ This assignment implements and refines the Ask Krish AI implementation based on 
 - [Build Log](work/fl07_build_log.md)
 - Raw Run Evidence: [work/fl07_evidence/fl07_raw_agent_run.mp4](work/fl07_evidence/fl07_raw_agent_run.mp4)
 
-## Ask Krish AI
+## FL-08 — Dynamic Portfolio Feature (Ask Krish AI)
 
-The "Ask Krish AI" agent is a personal portfolio assistant designed to answer recruiter and hiring manager questions. It grounds all responses using a local JSON knowledge base containing my verified experience and skills. It features server-side API handling via Vercel Edge functions, secure hidden API keys, and intelligent fallback for unknown information. It does NOT use RAG or vector search, relying purely on Context Stuffing for speed and simplicity.
+The "Ask Krish AI" agent is the dynamic, interactive feature of my portfolio, designed to answer recruiter and hiring manager questions. It grounds all responses using a local JSON knowledge base containing my verified experience and skills. It features server-side API handling via Vercel Edge functions, secure hidden API keys, and intelligent fallback for unknown information.
+
+This feature is fully deployed on the free tier and successfully tested end-to-end against the live API.
+
+- **Live Portfolio:** [https://portfolio-eta-pied-17.vercel.app/](https://portfolio-eta-pied-17.vercel.app/)
+- **Architecture Explainer:** [work/fl08_dynamic_feature.md](work/fl08_dynamic_feature.md)
+- **Live End-to-End Test Record:** [work/fl08_evidence/fl08_test.md](work/fl08_evidence/fl08_test.md)
 
 ## Portfolio
 
