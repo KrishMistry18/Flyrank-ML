@@ -1,10 +1,6 @@
 # FlyRank ML Internship
 
-This repository contains my completed coursework, projects, and portfolio materials for the FlyRank Machine Learning Internship.
-
-## About
-
-This repository showcases a full arc of work from foundational ML and data tasks to applied agent automation workflows and frontend deployment. It demonstrates my ability to not only build and evaluate machine learning concepts but also to deploy practical AI engineering solutions in a modern web environment.
+This repository documents my comprehensive work throughout the FlyRank Machine Learning Internship. It showcases a full arc of work spanning from foundational machine learning data tasks to AI fluency exercises, portfolio development, workflow automation, MCP (Model Context Protocol) integration, and the design and implementation of a personal AI agent.
 
 ## Repository Structure
 
@@ -17,75 +13,95 @@ This repository showcases a full arc of work from foundational ML and data tasks
 │   └── work/
 │       ├── notebooks/
 │       └── outputs/
-├── AI Fluency/
-│   ├── flyrank-ml-portfolio-case.md
-│   └── FL-01_Workflow_Audit.docx
 ├── work/
-│   ├── week04_three_roads.md
 │   ├── fl04_automation_walkthrough.md
 │   ├── fl04_automation_runs.md
 │   ├── claude_project_instructions.md
 │   ├── fl05_agent_mcp_explainer.md
 │   ├── fl05_mcp_runs.md
-│   └── fl05_evidence/
-└── Flyrank Progress report.pdf
+│   ├── fl05_explain_it_like_i_built_it.md
+│   ├── fl06_personal_agent_spec.md
+│   ├── fl07_build_log.md
+│   ├── fl07_evidence/
+│   │   └── fl07_raw_agent_run.mp4
+│   └── week04_three_roads.md
+└── AI Fluency/
+    └── flyrank-ml-portfolio-case.md
 ```
 
-## Completed Work
+- `Machine Learning/`: Contains all foundational ML coursework, Jupyter notebooks, datasets, model metrics, and capstone work.
+- `work/`: Contains all AI Fluency assignments, system architectures, MCP runs, agent specifications, and evidence for automation workflows.
+- `AI Fluency/`: Contains prompt engineering iterations and portfolio case study drafts.
 
-| Assignment | Description | Evidence |
-| :--- | :--- | :--- |
-| **Baseline/Action Scoring** | Computed baseline models and evaluated logic signals for business cases. | [`Machine Learning/work/notebooks/w04_baseline_score.ipynb`](Machine Learning/work/notebooks/w04_baseline_score.ipynb) |
-| **AI Fluency Prompt Iteration** | Detailed progression of prompt engineering and model interactions. | [`AI Fluency/flyrank-ml-portfolio-case.md`](AI Fluency/flyrank-ml-portfolio-case.md) |
-| **Stack Selection** | Technical evaluation of three distinct web stacks for my portfolio. | [`work/week04_three_roads.md`](work/week04_three_roads.md) |
-| **FL-04 Automation Workflow** | Design, prompt engineering, and runs of an AI-powered weekly industry brief workflow. | [`work/fl04_automation_walkthrough.md`](work/fl04_automation_walkthrough.md) |
-| **FL-05 Agent & MCP** | Explainer on agents vs workflows, and execution of local MCP tasks. | [`work/fl05_agent_mcp_explainer.md`](work/fl05_agent_mcp_explainer.md) |
-| **Capstone** | System architecture and ML documentation for the portfolio's Ask Krish AI. | [`Machine Learning/CAPSTONE.md`](Machine Learning/CAPSTONE.md) |
+## Machine Learning Work
+
+This repository contains rigorous logic-based signal analysis and predictive modeling for business search ranking.
+
+- **Week-4 Baseline:** [work/notebooks/w04_baseline_score.ipynb](Machine Learning/work/notebooks/w04_baseline_score.ipynb)
+- **Week-5 Model:** [work/notebooks/w05_model.ipynb](Machine Learning/work/notebooks/w05_model.ipynb)
+
+**Verified Evaluation Results:**
+- Week-4 baseline Precision@100: **54.55%**
+- Random Forest Precision@100: **64.00%**
+- Improvement: **+9.45 percentage points**
+
+*(Note: This is an observed evaluation result on a strict holdout split, not a causal claim.)*
+
+**Supporting Artifacts:**
+- Metrics: [w05_model_metrics.json](Machine Learning/work/outputs/w05_model_metrics.json)
+- Feature Importance: [w05_feature_importance.json](Machine Learning/work/outputs/w05_feature_importance.json)
+
+## AI Fluency Work
+
+| Assignment | Work | Evidence |
+|---|---|---|
+| Prompt Iteration | Detailed progression of prompt engineering and model interactions. | [`AI Fluency/flyrank-ml-portfolio-case.md`](AI Fluency/flyrank-ml-portfolio-case.md) |
+| Stack Selection | Technical evaluation of three distinct web stacks for my portfolio. | [`work/week04_three_roads.md`](work/week04_three_roads.md) |
+| FL-04 Automation | Design and execution of a robust no-code weekly industry brief workflow. | [`work/fl04_automation_walkthrough.md`](work/fl04_automation_walkthrough.md) |
+| FL-05 MCP Concepts | Explainer on agents vs workflows, and execution of local MCP tasks. | [`work/fl05_agent_mcp_explainer.md`](work/fl05_agent_mcp_explainer.md) |
+| FL-05 Explain It Like I Built It | Technical explanation of Ask Krish AI's backend knowledge injection mechanism. | [`work/fl05_explain_it_like_i_built_it.md`](work/fl05_explain_it_like_i_built_it.md) |
+| FL-06 Personal Agent Design | Detailed design specification and architecture for the Ask Krish AI agent. | [`work/fl06_personal_agent_spec.md`](work/fl06_personal_agent_spec.md) |
+| FL-07 Build the Agent | End-to-end testing, mock refinement, and build log for the Ask Krish AI agent. | [`work/fl07_build_log.md`](work/fl07_build_log.md) |
 
 ## FL-04 — Automation Workflow
 
-This assignment documents a robust no-code AI workflow for synthesizing a weekly developer industry brief. The pipeline follows a strict four-step process:
+This assignment documents a robust no-code AI workflow for synthesizing a weekly developer industry brief. The pipeline follows a strict four-step process: Gather, Synthesize, Draft, and Review/Format.
 
-1. **Gather:** Extract metadata and summaries from source URLs.
-2. **Synthesize:** Identify thematic links and trace claims to sources.
-3. **Draft:** Produce the weekly newsletter structure.
-4. **Review/Format:** QA the output and clean up formatting.
-
-The documentation includes five successful historical runs.
 - [Walkthrough & Architecture](work/fl04_automation_walkthrough.md)
 - [Workflow Runs](work/fl04_automation_runs.md)
 - [Engine Instructions](work/claude_project_instructions.md)
 
-## FL-05 — Agent Concepts and MCP
+## FL-05 — MCP
 
-This module dives into the transition from static LLM workflows to active Agent architectures utilizing the Model Context Protocol (MCP).
+This module dives into the transition from static LLM workflows to active Agent architectures utilizing the Model Context Protocol (MCP). It covers the distinction between a Workflow and an Agent, MCP concepts, Stitch MCP connection details, and execution of verifiable tasks against a local MCP server.
 
-It covers:
-- The distinction between a Workflow (like FL-04) and an autonomous Agent.
-- What MCP is and how tools, resources, and prompts are structured.
-- Execution of three distinct, verifiable tasks against a local UI prototyping MCP server (`stitch`).
-- A proposal to upgrade the FL-04 workflow into a true agent.
-
-**Documentation:**
 - [Concepts & Explainer](work/fl05_agent_mcp_explainer.md)
 - [MCP Task Runs](work/fl05_mcp_runs.md)
-- [Screenshots & Evidence Directory](work/fl05_evidence/)
+- Evidence: `work/fl05_evidence/`
 
-## Portfolio
+## FL-06 — Personal Agent Design
 
-My live portfolio is built with Next.js and deployed on Vercel. 
-**Live URL:** [https://portfolio-eta-pied-17.vercel.app/](https://portfolio-eta-pied-17.vercel.app/)
+Ask Krish AI was designed around one focused job:
+"Answer questions from recruiters and hiring managers about Krish's projects, skills, experience, and technical background."
 
-It includes professional case studies, project links, and an integrated AI assistant.
+- [Personal Agent Spec](work/fl06_personal_agent_spec.md)
+
+## FL-07 — Build the Agent
+
+This assignment implements and refines the Ask Krish AI implementation based on the FL-06 design. It documents the serverless API architecture, the local portfolio knowledge source (Context Stuffing), end-to-end testing, guardrails, and mock fallback mechanisms. 
+
+- [Build Log](work/fl07_build_log.md)
+- Raw Run Evidence: [work/fl07_evidence/fl07_raw_agent_run.mp4](work/fl07_evidence/fl07_raw_agent_run.mp4)
 
 ## Ask Krish AI
 
-A central feature of the portfolio is "Ask Krish AI", a personal portfolio agent. It features:
-- A strictly grounded knowledge base preventing hallucinations.
-- Server-side API handling via Vercel Edge functions.
-- Secure, hidden API keys.
-- Intelligent fallback for unknown information.
-- Markdown response rendering.
+The "Ask Krish AI" agent is a personal portfolio assistant designed to answer recruiter and hiring manager questions. It grounds all responses using a local JSON knowledge base containing my verified experience and skills. It features server-side API handling via Vercel Edge functions, secure hidden API keys, and intelligent fallback for unknown information. It does NOT use RAG or vector search, relying purely on Context Stuffing for speed and simplicity.
+
+## Portfolio
+
+**Live URL:** [https://portfolio-eta-pied-17.vercel.app/](https://portfolio-eta-pied-17.vercel.app/)
+
+The portfolio demonstrates my ability to build modern, responsive web applications using Next.js and Vercel. It features professional case studies, project links, and the natively integrated "Ask Krish AI" agent.
 
 ## Capstone
 
@@ -96,14 +112,15 @@ The capstone documentation details the architecture, design choices, and ML grou
 
 ## Reproducibility
 
-The Jupyter notebooks in `Machine Learning/work/notebooks/` can be executed locally using standard scientific Python tooling (`pandas`, `scikit-learn`, `jupyter`). No exotic infrastructure is required. The automation workflows are thoroughly documented with their exact system prompts so they can be reproduced in any standard LLM chat interface.
+The Jupyter notebooks in `Machine Learning/work/notebooks/` can be executed locally using standard scientific Python tooling (`pandas`, `scikit-learn`, `jupyter`). No exotic infrastructure is required. The automation workflows and agent instructions are thoroughly documented in markdown files so they can be reproduced in standard AI interfaces.
 
 ## Security
 
-This repository does not contain hardcoded API keys, tokens, passwords, or `.env` files. All live secrets (such as `GEMINI_API_KEY`) are managed strictly via external CI/CD environment variables in the Vercel dashboard.
+This repository does not contain hardcoded API keys, tokens, passwords, or `.env` files. All live secrets (such as `GEMINI_API_KEY`) are managed strictly via external CI/CD environment variables and should never be committed.
 
 ## Author
 
-**Krish Mistry**
+# Krish Mistry
+
 - Portfolio: [https://portfolio-eta-pied-17.vercel.app/](https://portfolio-eta-pied-17.vercel.app/)
 - GitHub: [https://github.com/KrishMistry18/Flyrank-ML](https://github.com/KrishMistry18/Flyrank-ML)
