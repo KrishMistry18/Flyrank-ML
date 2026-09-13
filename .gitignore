@@ -34,3 +34,11 @@ __pycache__/
 .venv/
 venv/
 .env
+
+.env.*
+!.env.example
+node_modules/
+.next/
+dist/
+build/
+.DS_Store
