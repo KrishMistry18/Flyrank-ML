@@ -169,7 +169,7 @@ All analysis is fully reproducible from the repository:
 | **Week-4 Baseline** | `Machine Learning/work/notebooks/w04_baseline_score.ipynb` |
 | **Week-5 Model** | `Machine Learning/work/notebooks/w05_model.ipynb` |
 | **ML-09 Validation Audit** | `Machine Learning/work/notebooks/w06_validation_audit.ipynb` |
-| **ML-10 Action Playbook** | `Machine Learning/work/notebooks/w07_action_playbook.ipynb` |
+| **ML-10 Action Playbook & ML-12 Demo Outline** | `Machine Learning/work/notebooks/w07_action_playbook.ipynb` |
 | **Model Metrics (W05)** | `Machine Learning/work/outputs/w05_model_metrics.json` |
 | **Audit Metrics (W06)** | `Machine Learning/work/outputs/w06_validation_audit_metrics.json` |
 | **Feature Importance** | `Machine Learning/work/outputs/w05_feature_importance.json` |
@@ -179,7 +179,15 @@ All analysis is fully reproducible from the repository:
 
 ---
 
-## 9. Acknowledgments & Data Credit
+## 9. Shareable Outputs
+
+- **5-Minute Demo Outline:** Available at the end of [w07_action_playbook.ipynb](../Machine Learning/work/notebooks/w07_action_playbook.ipynb).
+- **Social Post Draft:** [ml12_social_post.md](../Machine Learning/work/ml12_social_post.md)
+- **Employer Summary:** [ml12_employer_summary.md](../Machine Learning/work/ml12_employer_summary.md)
+
+---
+
+## 10. Acknowledgments & Data Credit
 
 This research was conducted as part of the **FlyRank Machine Learning Internship** program. The anonymized production search dataset was provided by FlyRank for research and educational purposes.
 

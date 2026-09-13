@@ -163,6 +163,15 @@ This research paper explores whether observable pre-decline signals (like histor
 - [ML-10 Action Playbook](Machine Learning/work/notebooks/w07_action_playbook.ipynb)
 - [Output JSONs / Queues](Machine Learning/work/outputs/)
 
+## ML-12 — Tell the Story
+
+The final stage of the ML track involves distilling the technical research into targeted, shareable outputs for different audiences, ensuring the problem framing (content decay prioritization) and honest results (51% Precision@100) are communicated clearly.
+
+- **Live Paper:** [https://KrishMistry18.github.io/Flyrank-ML/](https://KrishMistry18.github.io/Flyrank-ML/)
+- **5-Minute Demo Outline:** Included at the end of [w07_action_playbook.ipynb](Machine Learning/work/notebooks/w07_action_playbook.ipynb)
+- **Social Post:** [ml12_social_post.md](Machine Learning/work/ml12_social_post.md)
+- **Employer Summary (3 sentences):** [ml12_employer_summary.md](Machine Learning/work/ml12_employer_summary.md)
+
 ## Reproducibility
 
 The Jupyter notebooks in `Machine Learning/work/notebooks/` can be executed locally using standard scientific Python tooling (`pandas`, `scikit-learn`, `jupyter`). No exotic infrastructure is required. The automation workflows and agent instructions are thoroughly documented in markdown files so they can be reproduced in standard AI interfaces.
