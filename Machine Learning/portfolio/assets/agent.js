@@ -59,7 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function sendMessage(text) {
-    if (!text.trim()) return;
+    if (!text.trim()) {
+      input.style.border = "1px solid #ff4444";
+      setTimeout(() => input.style.border = "", 2000);
+      return;
+    }
+    if (text.length > 300) {
+      appendMessage("bot", "Message too long. Please keep it under 300 characters.");
+      return;
+    }
     
     appendMessage("user", text);
     conversationHistory.push({ role: "user", content: text });

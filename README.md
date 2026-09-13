@@ -112,6 +112,12 @@ A comprehensive mobile-first audit was performed on the live portfolio to ensure
 
 - **Mobile Fix Log:** [work/fl07_mobile_fix_log.md](work/fl07_mobile_fix_log.md)
 
+## FL-07 — Break Your Own Site
+Conducted a structured audit to break the deployed portfolio. Tested form validation, double submissions, meta tags (Findability), and speed. Discovered that the Ask Krish AI agent silently accepted empty strings and excessively long inputs. Fixed these vulnerabilities with UI feedback boundaries.
+- **Live Portfolio:** [https://portfolio-eta-pied-17.vercel.app/](https://portfolio-eta-pied-17.vercel.app/)
+- **Evidence Document:** [work/fl07_break_your_own_site.md](Machine Learning/work/fl07_break_your_own_site.md)
+- **Known Limitations:** True Lighthouse audits are environment-dependent, and Google Search indexing is a gradual external process.
+
 ## FL-08 — Dynamic Portfolio Feature (Ask Krish AI)
 
 The "Ask Krish AI" agent is the dynamic, interactive feature of my portfolio, designed to answer recruiter and hiring manager questions. It grounds all responses using a local JSON knowledge base containing my verified experience and skills. It features server-side API handling via Vercel Edge functions, secure hidden API keys, and intelligent fallback for unknown information.
