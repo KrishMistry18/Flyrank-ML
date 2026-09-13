@@ -149,6 +149,20 @@ The capstone documentation details the architecture, design choices, and ML grou
 - [Capstone Document](Machine Learning/CAPSTONE.md)
 - [Capstone Notebook](Machine Learning/work/notebooks/capstone_refresh_opportunity.ipynb)
 
+## ML-11 — Ship the Paper (Deployed Research)
+
+**Title:** Can Observable Signals Flag Content Decay Before Traffic Drops?  
+**Live Paper URL:** [https://KrishMistry18.github.io/Flyrank-ML/](https://KrishMistry18.github.io/Flyrank-ML/)  
+**Submission URL File:** [paper_url.txt](Machine Learning/submission/paper_url.txt)  
+**Paper Source:** [docs/index.md](docs/index.md)
+
+This research paper explores whether observable pre-decline signals (like historical impressions and content staleness) can predict and prioritize pages at risk of traffic decline, using a RandomForest model. It honestly details the target leakage discovered during validation and presents the corrected safe model (51% Precision@100), along with a ranked Content Action Playbook to guide human review without harmful automation.
+
+**Reproducibility Links:**
+- [ML-09 Validation Audit](Machine Learning/work/notebooks/w06_validation_audit.ipynb)
+- [ML-10 Action Playbook](Machine Learning/work/notebooks/w07_action_playbook.ipynb)
+- [Output JSONs / Queues](Machine Learning/work/outputs/)
+
 ## Reproducibility
 
 The Jupyter notebooks in `Machine Learning/work/notebooks/` can be executed locally using standard scientific Python tooling (`pandas`, `scikit-learn`, `jupyter`). No exotic infrastructure is required. The automation workflows and agent instructions are thoroughly documented in markdown files so they can be reproduced in standard AI interfaces.
