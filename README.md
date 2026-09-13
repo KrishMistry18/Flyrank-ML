@@ -2,6 +2,75 @@
 
 This repository documents my comprehensive work throughout the FlyRank Machine Learning Internship. It showcases a full arc of work spanning from foundational machine learning data tasks to AI fluency exercises, portfolio development, workflow automation, MCP (Model Context Protocol) integration, and the design and implementation of a personal AI agent.
 
+## Project Overview: Ask Krish AI (Capstone)
+
+**Ask Krish AI** is a native, context-aware portfolio assistant embedded directly into `krish.dev`. It is built for recruiters, hiring managers, and technical peers who want specific, targeted information about my background, skills, and projects quickly—without having to scroll through static pages. It answers natural-language questions immediately, grounded exclusively in verified portfolio data.
+
+**Live Demo Video:** [ADD VIDEO LINK HERE AFTER RECORDING]  
+**Live Portfolio:** [portfolio-eta-pied-17.vercel.app](https://portfolio-eta-pied-17.vercel.app/)
+
+### Setup Instructions
+
+To run the agent locally:
+
+1. **Clone the repository** and navigate to the frontend directory: `cd "Machine Learning/portfolio"`
+2. **Install dependencies**: `npm install express` (for the dev server).
+3. **Configure Environment Variables**: You must set your Gemini API key. *Never commit this key to version control.*
+   - On Windows: `set GEMINI_API_KEY=your_actual_key`
+   - On Mac/Linux: `export GEMINI_API_KEY=your_actual_key`
+   - *(Note: If the key is omitted, the API will gracefully fall back to a local mock response system for safety.)*
+4. **Run the server**: `node dev_server.js`
+5. **View the app**: Open `http://localhost:3000` in your browser and click the chat bubble.
+
+### Usage Examples
+
+Try asking the agent these questions on the live portfolio:
+- *"What AI projects has Krish built?"*
+- *"Why should I consider Krish for a full-stack role?"*
+- *"What was the precision score for the FlyRank ML project?"*
+- *"What is Krish's exact revenue?"* (Expect a graceful fallback/refusal)
+
+### Architecture
+
+```text
+Visitor 
+  ↓ (Types question in floating chat UI)
+Portfolio UI (Vanilla JS/CSS on index.html)
+  ↓ (POST request with message history)
+/api/chat.js (Vercel Serverless Function)
+  ↓ (Loads data/krish-knowledge.json)
+System Prompt Formatting (Knowledge + Guardrails)
+  ↓ (REST API request)
+Google Gemini 2.5 Flash Model
+  ↓ (Returns verified response)
+Portfolio UI
+```
+
+### V2 Evaluation Results
+
+The agent achieved a **100% Pass Rate** on the V2 10-question evaluation suite:
+- **General Questions (5/5):** Passed. Correctly retrieved basic skills and background.
+- **Project Questions (3/3):** Passed. Accurately summarized architecture and results from `krish-knowledge.json`.
+- **Hallucination-Bait Questions (2/2):** Passed. When asked for unverified information (e.g., exact revenue, personal phone number), the agent successfully refused to answer and provided a public contact email instead.
+
+### Limitations
+
+- **Knowledge Boundary:** The agent can only reliably answer information represented in its maintained knowledge base (`krish-knowledge.json`). It is strictly instructed not to invent facts outside this source.
+- **Context Window:** Currently, the entire knowledge base is injected wholesale into the prompt. If the portfolio grows significantly, this architecture will hit token limits and require a vector database/RAG migration.
+- **Session State:** Conversation state is maintained in the client's browser. Refreshing the page clears the chat history.
+
+### AI Development Transparency
+
+**What was built with AI:**
+- The initial UI styling and animations for the chat interface were generated using AI design tools and refined manually.
+- The `api/chat.js` serverless logic and Gemini REST API integration was scaffolded using Google Gemini/Claude, then manually audited to ensure zero dependency bloat.
+- The strict system prompt and fallback mechanisms were iteratively refined through AI-assisted testing to eliminate hallucinations.
+
+**What was independently verified:**
+- I personally extracted and structured all facts in the `krish-knowledge.json` file. The AI did not invent any of my skills or project metrics.
+- I independently verified the V2 evaluation results by running the local evaluation script and ensuring the fallback responses triggered correctly.
+- All secrets (like `GEMINI_API_KEY`) were manually secured using environment variables and Vercel dashboard configurations; AI did not handle deployment secrets.
+
 ## Repository Structure
 
 ```text
