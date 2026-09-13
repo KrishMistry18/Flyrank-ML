@@ -40,6 +40,19 @@ This repository contains rigorous logic-based signal analysis and predictive mod
 - **Week-4 Baseline:** [work/notebooks/w04_baseline_score.ipynb](Machine Learning/work/notebooks/w04_baseline_score.ipynb)
 - **Week-5 Model:** [work/notebooks/w05_model.ipynb](Machine Learning/work/notebooks/w05_model.ipynb)
 
+## ML-09 — Validation Audit
+
+Audited the week 5 model against target leakage and data snooping. Group-split validation isolated clients correctly and revealed the true honest performance (51% Precision@100). The `impressions_prev_30d` feature was flagged as a strict target leak and safely removed.
+- **Audit Notebook:** [Machine Learning/work/notebooks/w06_validation_audit.ipynb](Machine Learning/work/notebooks/w06_validation_audit.ipynb)
+- **Metrics JSON:** [Machine Learning/work/outputs/w06_validation_audit_metrics.json](Machine Learning/work/outputs/w06_validation_audit_metrics.json)
+
+## ML-10 — Content Action Playbook
+
+Constructed an actionable, non-production Content Action Playbook based solely on the safely validated W06 group-split model (51% Precision@100). The playbook explicitly defines strict boundaries (no automated deletions or unreviewed publishes) and generates a ranked review queue for human SEO/Content teams.
+- **Playbook Notebook:** [Machine Learning/work/notebooks/w07_action_playbook.ipynb](Machine Learning/work/notebooks/w07_action_playbook.ipynb)
+- **Ranked Action Queue:** [Machine Learning/work/outputs/w07_ranked_action_queue.csv](Machine Learning/work/outputs/w07_ranked_action_queue.csv)
+- **Distribution Figure:** [Machine Learning/work/figures/w07_priority_distribution.png](Machine Learning/work/figures/w07_priority_distribution.png)
+
 **Verified Evaluation Results:**
 - Week-4 baseline Precision@100: **54.55%**
 - Random Forest Precision@100: **64.00%**
