@@ -241,6 +241,15 @@ The final stage of the ML track involves distilling the technical research into 
 - **Social Post:** [ml12_social_post.md](Machine Learning/work/ml12_social_post.md)
 - **Employer Summary (3 sentences):** [ml12_employer_summary.md](Machine Learning/work/ml12_employer_summary.md)
 
+## Next Case / Continuing Build
+
+The portfolio is never completely finished. As identified in the FL-09 limitations, the next logical build focuses on scaling the personal agent's backend.
+
+- **Next Project:** Ask Krish AI V2: Vector RAG Migration
+- **Next-Case Playbook:** [work/next_case_playbook.md](work/next_case_playbook.md)
+- **Next Piece of Work:** [work/next_piece_of_work.md](work/next_piece_of_work.md)
+- **First Milestone:** Build a local Python script to chunk the `krish-knowledge.json` and markdown files, generate embeddings, and query them locally.
+
 ## Reproducibility
 
 The Jupyter notebooks in `Machine Learning/work/notebooks/` can be executed locally using standard scientific Python tooling (`pandas`, `scikit-learn`, `jupyter`). No exotic infrastructure is required. The automation workflows and agent instructions are thoroughly documented in markdown files so they can be reproduced in standard AI interfaces.
